@@ -1,0 +1,20 @@
+#! /usr/bin/env bash 
+
+HOST_IP=$(hostname -I | cut -d \  -f 1 -)
+DHCP_OPTIONS_CONF=55-dhcp-options.conf
+
+sudo rm -f ${DHCP_OPTIONS_CONF}
+
+cat <<EOF > ${DHCP_OPTIONS_CONF}
+# Local subnet and DNS
+dhcp-option=option:netmask,255.255.255.0 # 1
+dhcp-option=option:dns-server,${HOST_IP} # 6
+
+# Add Unifi inform host
+dhcp-vendorclass=set:ubntTag,ubnt
+dhcp-option=tag:ubntTag,43,${HOST_IP}
+
+EOF
+
+sudo chown root:root ${DHCP_OPTIONS_CONF}
+docker cp ${DHCP_OPTIONS_CONF} pihole:/etc/dnsmasq.d/

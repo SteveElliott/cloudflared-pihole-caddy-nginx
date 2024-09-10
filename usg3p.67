@@ -1,0 +1,31 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-03-31 15:14 AEDT
+Nmap scan report for USG3P (10.1.1.1)
+Host is up (0.00019s latency).
+
+PORT   STATE SERVICE
+67/udp open  dhcps
+| dhcp-discover: 
+|   DHCP Message Type: DHCPACK
+|   Server Identifier: 10.1.1.1
+|   Subnet Mask: 255.255.255.0
+|   Router: 10.1.1.1
+|   Domain Name Server: 10.1.1.2
+|_  Domain Name: lan
+MAC Address: B4:FB:E4:E3:30:0B (Ubiquiti Networks)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.97 seconds
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-03-31 15:15 AEDT
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 10.1.1.64
+|     DHCP Message Type: DHCPOFFER
+|     Server Identifier: 10.1.1.1
+|     IP Address Lease Time: 5m00s
+|     Subnet Mask: 255.255.255.0
+|     Router: 10.1.1.1
+|     Domain Name Server: 10.1.1.2
+|     Domain Name: lan
+|     Renewal Time Value: 2m30s
+|_    Rebinding Time Value: 4m22s
+Nmap done: 0 IP addresses (0 hosts up) scanned in 1.23 seconds

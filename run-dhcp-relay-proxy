@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+# source .env
+
+PIHOLE_IP=$(docker-ip pihole)
+
+# sudo dnsmasq --port=0 --dhcp-relay=10.1.1.2,"${PIHOLE_IP}" --dhcp-proxy --log-dhcp  --log-facility=dhcpproxy --dumpfile=dhcpproxy --dumpmask=0x1000 -d
+
+sudo dnsmasq --port=0 --dhcp-relay=10.1.1.2,"${PIHOLE_IP}" --dhcp-proxy --log-dhcp --log-debug --log-facility=./dhcpproxy.log
+
+#docker-ip pihole | awk -F. '{print $1"."$2"."$3}'

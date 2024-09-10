@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+# TO DO: Need to wait for pihole to be running
+# possibley run this a service so it restarts..
+
+PIHOLE_IP=$(docker-ip pihole)
+ETH=eth0
+
+sudo ~/.local/bin/dhcp-helper -s "${PIHOLE_IP}" -i "${ETH}" 
+
+

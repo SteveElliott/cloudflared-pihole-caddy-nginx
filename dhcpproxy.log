@@ -1,0 +1,12 @@
+Aug 20 16:17:14 dnsmasq[4171156]: started, version 2.85 DNS disabled
+Aug 20 16:17:14 dnsmasq[4171156]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset auth cryptohash DNSSEC loop-detect inotify dumpfile
+Aug 20 16:17:14 dnsmasq-dhcp[4171156]: DHCP relay from 10.1.1.2 to 172.18.0.5
+Aug 20 16:17:58 dnsmasq-dhcp[4171156]: DHCP relay 10.1.1.2 -> 172.18.0.5
+Aug 20 16:18:10 dnsmasq-dhcp[4171156]: DHCP relay 10.1.1.2 -> 172.18.0.5
+Aug 20 16:18:13 dnsmasq-dhcp[4171156]: DHCP relay 10.1.1.2 -> 172.18.0.5
+Aug 20 16:19:21 dnsmasq-dhcp[4171156]: DHCP relay 10.1.1.2 -> 172.18.0.5
+Aug 21 15:02:37 dnsmasq[152648]: started, version 2.85 DNS disabled
+Aug 21 15:02:37 dnsmasq[152648]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset auth cryptohash DNSSEC loop-detect inotify dumpfile
+Aug 21 15:02:37 dnsmasq-dhcp[152648]: DHCP relay from 10.1.1.2 to 172.18.0.4
+Aug 21 15:03:16 dnsmasq-dhcp[152648]: DHCP relay 10.1.1.2 -> 172.18.0.4
+Aug 21 15:04:04 dnsmasq-dhcp[152648]: DHCP relay 10.1.1.2 -> 172.18.0.4
