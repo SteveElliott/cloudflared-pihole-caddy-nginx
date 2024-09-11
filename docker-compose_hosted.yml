@@ -79,7 +79,7 @@ services:
       PIHOLE_DNS_: "172.18.0.2#5053" # host for pihole to use for remote resolution
       # PIHOLE_DNS_: "cloudflared#5053" # host for pihole to use for remote resolution
       # WEBPASSWORD: 'set a secure password here or it will be random'
-#      FTLCONF_LOCAL_IPV4: 10.1.1.2  # host for clients to use for DNS requests
+      FTLCONF_LOCAL_IPV4: 10.1.1.2  # host for clients to use for DNS requests
 #      INTERFACE=eth1 # DHCP traffic to be only on static (on eth1)
 #      DNSMASQ_LISTENING: all
 
